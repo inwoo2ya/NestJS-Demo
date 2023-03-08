@@ -1,0 +1,11 @@
+POST http://localhost:3000/boards
+Content-Type: application/json;
+
+{
+	"id":1,
+	"title":"Test1",
+	"contents":"테스트1 입니다.",
+}
+
+###
+GET http://localhost:3000/boards 
