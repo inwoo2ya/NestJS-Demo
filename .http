@@ -2,10 +2,19 @@ POST http://localhost:3000/boards
 Content-Type: application/json
 
 {
-	"id":1,
-	"title":"Test1",
-	"contents":"테스트1 입니다."
+	"title":"Test2",
+	"contents":"테스트2입니다."
 }
 
 ###
 GET http://localhost:3000/boards 
+###
+GET http://localhost:3000/boards/17874200-c2db-11ed-a6eb-9589d67b3d80/status
+
+###
+PATCH http://localhost:3000/boards/17874200-c2db-11ed-a6eb-9589d67b3d80/status
+Content-Type: application/json
+
+{
+	"status":"PRIVATE"
+}
